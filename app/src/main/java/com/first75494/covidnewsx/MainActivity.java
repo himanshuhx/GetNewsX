@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         private  InputStream getInputStream(){
             try {
-                URL url = new URL("https://news.google.com/rss/search?q=covid-19&hl=en-US&sort=date&gl=US&num=100&ceid=US:en");
+                URL url = new URL("https://www.thehindu.com/news/national/feeder/default.rss");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
                 connection.setDoInput(true);
@@ -97,10 +97,10 @@ public class MainActivity extends AppCompatActivity {
                     if(parser.getName().equals("item")){
                        parser.require(XmlPullParser.START_TAG,null,"item");
 
-                      String title="";
-                      String description="";
-                      String link="";
-                      String date="";
+                      String title =" ";
+                      String description = "";
+                      String link = "";
+                      String date = "";
 
                        while(parser.next() != XmlPullParser.END_TAG){
                            if(parser.getEventType() != XmlPullParser.START_TAG){
@@ -158,6 +158,6 @@ public class MainActivity extends AppCompatActivity {
                           break;
                   }
               }
-            }
+        }
     }
 }
