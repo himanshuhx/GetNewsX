@@ -10,3 +10,5 @@ This application works on Android Operating System.
 
 This Application has a Main Activity which shows the latest content of news site.Users can scroll down to look for their choice of news.
 On clicking upon the View User is directed to the original news site.
+
+<img src="https://user-images.githubusercontent.com/65825310/83631097-99bcaa80-a5ba-11ea-8035-19960781ff52.png" alt="alt text" width="250" height="450">
