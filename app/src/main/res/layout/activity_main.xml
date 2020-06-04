@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:outlineAmbientShadowColor="@color/colorPrimary"
+    android:background="@android:color/black">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Today's Breaking News"
          android:id="@+id/txtTitle"
+        android:textColor="@android:color/background_dark"
         android:textStyle="italic|bold"
         android:layout_centerHorizontal="true"
         android:textSize="28sp"
@@ -21,6 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtTitle"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_blue_bright"/>
 
 </RelativeLayout>
