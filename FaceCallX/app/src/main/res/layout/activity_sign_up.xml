@@ -11,24 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/EnterPhoneNo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:text="Enter Your Phone no"
-       android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:textSize="25dp"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/EnterPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="Enter Your Phone no"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
-    <com.hbb20.CountryCodePicker
+        <com.hbb20.CountryCodePicker
         android:id="@+id/ccp"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+            android:layout_marginTop="10dp"
         android:layout_below="@+id/EnterPhoneNo"
         android:layout_marginLeft="30dp"
-        app:ccpDialog_backgroundColor="@color/colorAccent"/>
+        app:ccpDialog_backgroundColor="#FFFFFF"/>
 
     <EditText
         android:id="@+id/phonetext"
@@ -36,10 +38,12 @@
         android:layout_height="50dp"
         android:layout_marginRight="30dp"
         android:hint="Type Here..."
+        android:layout_marginTop="10dp"
         android:inputType="phone"
         android:layout_below="@+id/EnterPhoneNo"
         android:layout_centerInParent="true"
         android:layout_toRightOf="@+id/ccp"/>
+
 
     </RelativeLayout>
 
@@ -50,6 +54,7 @@
         android:hint=" Enter OTP"
         android:inputType="phone"
         android:layout_below="@+id/phoneAuth"
+        android:layout_marginTop="300dp"
         android:layout_marginRight="50dp"
         android:layout_marginLeft="50dp"
         android:visibility="gone"/>
@@ -58,9 +63,8 @@
         android:id="@+id/SignUpBtn"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/phoneAuth"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="420dp"
         android:text="Continue"/>
 
 </RelativeLayout>
